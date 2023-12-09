@@ -1,0 +1,16 @@
+.rating-stars {
+    display: none;
+    /* Include your additional styling for the stars here */
+}
+
+.rating-star {
+    cursor: pointer;
+    font-size: 24px;
+    color: #ccc;
+    margin: 0 5px;
+}
+
+.rating-star:hover,
+.rating-star:checked ~ .rating-star {
+    color: #ffcc00;
+}
