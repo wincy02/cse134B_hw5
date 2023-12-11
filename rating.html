@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rating Widget</title>
+        <link rel="stylesheet" href="rating_widget.css">
+    </head>
+    <body>
+        <h1>Rating Widget</h1>
+        <rating-widget>
+            <form id="rating-form" action="https://httpbin.org/post" method="POST">
+                <label for="rating">How satisfied are you?</label>
+                <input type="hidden" name="question" value="How satisfied are you?">
+                <input type="hidden" name="sentBy" value="HTML">
+                <input type="number" id="rating" name="rating" min="1" max="5" value="0" required>
+                <button type="submit">Submit</button>
+            </form>
+
+            <span id="rating-stars">
+                <input type="checkbox" id="star1" class="star1" value="1" required>
+                <label for="star1" class="star1-label">&#9733;</label>
+
+                <input type="checkbox" id="star2" class="star2" value="2" required>
+                <label for="star2" class="star2-label">&#9733;</label>
+
+                <input type="checkbox" id="star3" class="star3" value="3" required>
+                <label for="star3" class="star3-label">&#9733;</label>
+
+                <input type="checkbox" id="star4" class="star4" value="4" required>
+                <label for="star4" class="star4-label">&#9733;</label>
+
+                <input type="checkbox" id="star5" class="star5" value="5" required>
+                <label for="star5" class="star5-label">&#9733;</label>
+
+
+            </span>
+            <span id="rating-message"></span>
+            <br><br>
+
+            <button id="rest-btn">Reset</button>
+    
+            
+
+     
+            
+        </rating-widget>
+         
+        <script src="rating.js"></script>
+        
+        
+    </body>
+</html>

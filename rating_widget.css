@@ -1,16 +1,59 @@
-.rating-stars {
+.star1,
+.star2,
+.star3,
+.star4,
+.star5{
     display: none;
-    /* Include your additional styling for the stars here */
 }
 
-.rating-star {
-    cursor: pointer;
-    font-size: 24px;
-    color: #ccc;
-    margin: 0 5px;
+#rating-form{
+    display: block;
+}
+#rating-stars{
+    display: none;
 }
 
-.rating-star:hover,
-.rating-star:checked ~ .rating-star {
-    color: #ffcc00;
+.js-enabled #rating-form{
+    display: none;
 }
+
+.js-enabled #rating-stars{
+    display: block;
+}
+
+
+.star1-label,
+.star2-label,
+.star3-label,
+.star4-label,
+.star5-label{
+   font-size: 45px;
+   color: grey;
+   cursor:pointer;
+}
+
+
+.star1-label.clicked,
+.star2-label.clicked,
+.star3-label.clicked,
+.star4-label.clicked,
+.star5-label.clicked{
+    color:gold;
+}
+
+#rest-btn{
+    display: none;
+}
+.js-enabled #rest-btn{
+    display: block;
+    margin-left: 95px;
+    
+}
+
+#rest-btn:hover{
+    background-color: burlywood;
+}
+
+
+
+
